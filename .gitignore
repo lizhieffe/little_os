@@ -22,3 +22,7 @@ build/
 output/
 
 kernel.elf
+
+bochslog.txt
+
+os.iso

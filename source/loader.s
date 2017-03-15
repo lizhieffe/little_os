@@ -1,4 +1,6 @@
 extern sum_of_three ; the function sum_of_three is defined elsewhere
+extern print_welcome_screen
+
 global loader                   ; the entry symbol for ELF
 
 MAGIC_NUMBER  equ 0x1BADB002    ; define the magic number const
@@ -31,6 +33,11 @@ loader:                         ; the loader label (defined as entry poin in lin
   push dword 2                  ; arg2
   push dword 1                  ; arg1
   call sum_of_three             ; call the function, the result will be in eax
+  call print_welcome_screen
+
+#  mov ax, word 0x4128
+#  mov word [0x000B8000], ax
+# mov word [0x000B8000], 0x4128
 
 .loop:
   jmp .loop                     ; loop forever
