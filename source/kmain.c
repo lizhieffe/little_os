@@ -1,3 +1,4 @@
+#include "display.h"
 #include "framebuffer.h"
 
 int sum_of_three(int arg1, int arg2, int arg3) {
@@ -23,4 +24,7 @@ void print_welcome_screen() {
   fb_write_cell(1600 + 28, '!', FB_BLUE, FB_CYAN);
   // Move the cursor to line 12.
   fb_move_cursor(880);
+
+  char c[5] = {'a', 'b', 'c', 'd', 'e'};
+  write(c, 5);
 }

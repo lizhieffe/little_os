@@ -1,13 +1,15 @@
 #ifndef INCLUDE_FRAMEBUFFER_H_
 #define INCLUDE_FRAMEBUFFER_H_
 
-#define FB_BLACK      0
-#define FB_BLUE       1
-#define FB_GREEN      2
-#define FB_CYAN       3
-#define FB_RED        4
-#define FB_Magenta    5
-#define FB_DARK_GREY  8
+#define FB_BLACK        0
+#define FB_BLUE         1
+#define FB_GREEN        2
+#define FB_CYAN         3
+#define FB_RED          4
+#define FB_Magenta      5
+#define FB_DARK_GREY    8
+#define FB_LIGHT_BROWN  14
+#define FB_WHITE        15
 
 /** fb_write_cell:
  ** Writes a character with the given foreground and background to position i
